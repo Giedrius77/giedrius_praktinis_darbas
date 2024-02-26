@@ -11,15 +11,15 @@
         {% csrf_token %}
         <label for="move">{% trans "choose your move"|capfirst %}:</label>
         <select name="move" id="move">
-            <option value="rock">{% trans "rock"|capfirst %}</option>
-            <option value="paper">{% trans "paper"|capfirst %}</option>
-            <option value="scissors">{% trans "scissors"|capfirst %}</option>
+            <option value="{% trans "rock" %}">{% trans "rock"|capfirst %}</option>
+            <option value="{% trans "paper" %}">{% trans "paper"|capfirst %}</option>
+            <option value="{% trans "scissors" %}">{% trans "scissors"|capfirst %}</option>
         </select>
         <button type="submit">{% trans "play"|capfirst %}</button>
     </form>
 
     {% if result %}
-        <h2>{{ result }}</h2>
+        <h3>{{ result }}</h3>
         <p>{% trans "your move:"|capfirst %} {{ user_move }}</p>
         <p>{% trans "computer's move:"|capfirst %} {{ computer_move }}</p>
     {% endif %}
