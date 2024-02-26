@@ -26,4 +26,9 @@ def play_game():
     result = determine_winner(user_choice, computer_choice)
     print(result)
 
-play_game()
+# play_game() aktyvuoti jeigu nenorime while True loop!, zinoma reikia uzkomentuoti while True 
+while True:
+    play_game()
+    play_again = input("Do you want to play again? (yes/no): ").lower() # .lower nebutina, praktiniais sumetimais panaudotas
+    if play_again != 'yes':
+        break
