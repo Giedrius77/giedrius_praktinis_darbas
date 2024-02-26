@@ -1,26 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html> {% load static i18n %}
 <html>
 <head>
-    <title>Rock, Paper, Scissors Game</title>
+    <title>{% trans "rock"|capfirst %}-{% trans "paper"|capfirst %}-{% trans "scissors"|capfirst %} {% trans "game"|capfirst %}</title>
 </head>
 <body>
-    <h1>Rock, Paper, Scissors Game</h1>
+    <h1>{% trans "game"|capfirst %}</h1>
+    <h2>{% trans "rock"|capfirst %}-{% trans "paper"|capfirst %}-{% trans "scissors"|capfirst %}</h2>
     
     <form method="post">
         {% csrf_token %}
-        <label for="move">Choose your move:</label>
+        <label for="move">{% trans "choose your move"|capfirst %}:</label>
         <select name="move" id="move">
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
+            <option value="rock">{% trans "rock"|capfirst %}</option>
+            <option value="paper">{% trans "paper"|capfirst %}</option>
+            <option value="scissors">{% trans "scissors"|capfirst %}</option>
         </select>
-        <button type="submit">Play</button>
+        <button type="submit">{% trans "play"|capfirst %}</button>
     </form>
 
     {% if result %}
         <h2>{{ result }}</h2>
-        <p>Your move: {{ user_move }}</p>
-        <p>Computer's move: {{ computer_move }}</p>
+        <p>{% trans "your move:"|capfirst %} {{ user_move }}</p>
+        <p>{% trans "computer's move:"|capfirst %} {{ computer_move }}</p>
     {% endif %}
 </body>
 </html>

@@ -32,3 +32,10 @@ Programos veikimo demonstracija
 Įdomiausio/sudėtingiausio kodo demonstracija
 Pateikimas:
 Atviro kodo, vieša kodo repozitorija Github'e, į kurią nuorodą reikia pateikti čia (attach -> link)
+
+My work
+
+Attach
+Upload from this device
+No file chosen
+New
