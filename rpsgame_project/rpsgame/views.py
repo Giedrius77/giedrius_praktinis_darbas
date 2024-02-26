@@ -11,11 +11,11 @@ def play_game(request):
 
         if user_move == computer_move:
             result = _("it's a tie!").capitalize    
-        elif (user_move == 'rock' and computer_move == 'scissors') or (user_move == 'paper' and computer_move == 'rock') or (user_move == 'scissors' and computer_move == 'paper'):
+        elif (user_move == _('rock') and computer_move == _('scissors')) or (user_move == _('paper') and computer_move == _('rock')) or (user_move == _('scissors') and computer_move == _('paper')):
             result = _("you win!").capitalize
         else:
             result = _("computer wins!").capitalize
 
         return render(request, 'rpsgame/play_game.html', {'result': result, 'user_move': user_move, 'computer_move': computer_move})
 
-    return render(request, 'rpsgame/play_game.html')
+    return render(request, 'rpsgame/play_game.html') 
