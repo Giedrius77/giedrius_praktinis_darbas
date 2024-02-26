@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock, Paper, Scissors Game</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Game</h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="move">Choose your move:</label>
+        <select name="move" id="move">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <button type="submit">Play</button>
+    </form>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+        <p>Your move: {{ user_move }}</p>
+        <p>Computer's move: {{ computer_move }}</p>
+    {% endif %}
+</body>
+</html>
