@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 10:24+0000\n"
+"POT-Creation-Date: 2024-02-26 11:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,18 +27,21 @@ msgstr "RPS žaidimas"
 #: rpsgame/templates/rpsgame/play_game.html:4
 #: rpsgame/templates/rpsgame/play_game.html:8
 #: rpsgame/templates/rpsgame/play_game.html:14 rpsgame/views.py:8
+#: rpsgame/views.py:14
 msgid "rock"
 msgstr "akmuo"
 
 #: rpsgame/templates/rpsgame/play_game.html:4
 #: rpsgame/templates/rpsgame/play_game.html:8
 #: rpsgame/templates/rpsgame/play_game.html:15 rpsgame/views.py:8
+#: rpsgame/views.py:14
 msgid "paper"
 msgstr "popierius"
 
 #: rpsgame/templates/rpsgame/play_game.html:4
 #: rpsgame/templates/rpsgame/play_game.html:8
 #: rpsgame/templates/rpsgame/play_game.html:16 rpsgame/views.py:8
+#: rpsgame/views.py:14
 msgid "scissors"
 msgstr "žirklės"
 
