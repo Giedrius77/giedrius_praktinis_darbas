@@ -18,4 +18,4 @@ def play_game(request):
 
         return render(request, 'rpsgame/play_game.html', {'result': result, 'user_move': user_move, 'computer_move': computer_move})
 
-    return render(request, 'rpsgame/play_game.html') 
+    return render(request, 'rpsgame/play_game.html')  

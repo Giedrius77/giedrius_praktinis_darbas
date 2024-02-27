@@ -1,7 +1,8 @@
-<!DOCTYPE html> {% load static i18n %}
+<!DOCTYPE html> {% load static i18n %} {#  #}
 <html>
 <head>
     <title>{% trans "rock"|capfirst %}-{% trans "paper"|capfirst %}-{% trans "scissors"|capfirst %} {% trans "game"|capfirst %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> {#linkas, kad veiktu style.css failas#}
 </head>
 <body>
     <h1>{% trans "game"|capfirst %}</h1>
@@ -23,5 +24,13 @@
         <p>{% trans "your move:"|capfirst %} {{ user_move }}</p>
         <p>{% trans "computer's move:"|capfirst %} {{ computer_move }}</p>
     {% endif %}
+    <main>{% block content %}{% endblock content %}</main>
+    <footer>
+        {% block footer  %}{% endblock footer  %}
+        <p>&copy; 2024 Giedriaus praktinis darbas
+            <a style="float:right;" href="https://discord.gg/ywbbZPcY">{% trans "community on discord" %}</a>
+            <a style="float:right;" href="https://facebook.com/" target="_blank"><img class="icon" src="{% static "img/icons8_facebook.png" %}"></a> {# .png Dashboard puslapyje footeryje #}
+        </p>
+    </footer>
 </body>
 </html> 
