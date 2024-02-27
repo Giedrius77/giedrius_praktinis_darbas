@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', include('rpsgame.urls')),
     path('', RedirectView.as_view(url='play/', permanent=True)),  # Redirect root URL to 'play/' endpoint
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
 
 urlpatterns.extend(static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
