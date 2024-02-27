@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-27 07:44+0000\n"
+"POT-Creation-Date: 2024-02-27 09:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,54 +24,51 @@ msgstr ""
 msgid "rpsgame"
 msgstr "RPS žaidimas"
 
-#: rpsgame/templates/base.html:9 rpsgame/templates/rpsgame/play_game.html:4
-#: rpsgame/templates/rpsgame/play_game.html:7
-msgid "game"
-msgstr "žaidimas"
-
-#: rpsgame/templates/base.html:10 rpsgame/templates/base.html:16
 #: rpsgame/templates/rpsgame/play_game.html:4
-#: rpsgame/templates/rpsgame/play_game.html:8
-#: rpsgame/templates/rpsgame/play_game.html:14 rpsgame/views.py:8
+#: rpsgame/templates/rpsgame/play_game.html:9
+#: rpsgame/templates/rpsgame/play_game.html:15 rpsgame/views.py:8
 #: rpsgame/views.py:14
 msgid "rock"
 msgstr "akmuo"
 
-#: rpsgame/templates/base.html:10 rpsgame/templates/base.html:17
 #: rpsgame/templates/rpsgame/play_game.html:4
-#: rpsgame/templates/rpsgame/play_game.html:8
-#: rpsgame/templates/rpsgame/play_game.html:15 rpsgame/views.py:8
+#: rpsgame/templates/rpsgame/play_game.html:9
+#: rpsgame/templates/rpsgame/play_game.html:16 rpsgame/views.py:8
 #: rpsgame/views.py:14
 msgid "paper"
 msgstr "popierius"
 
-#: rpsgame/templates/base.html:10 rpsgame/templates/base.html:18
 #: rpsgame/templates/rpsgame/play_game.html:4
-#: rpsgame/templates/rpsgame/play_game.html:8
-#: rpsgame/templates/rpsgame/play_game.html:16 rpsgame/views.py:8
+#: rpsgame/templates/rpsgame/play_game.html:9
+#: rpsgame/templates/rpsgame/play_game.html:17 rpsgame/views.py:8
 #: rpsgame/views.py:14
 msgid "scissors"
 msgstr "žirklės"
 
-#: rpsgame/templates/base.html:14 rpsgame/templates/rpsgame/play_game.html:12
+#: rpsgame/templates/rpsgame/play_game.html:4
+#: rpsgame/templates/rpsgame/play_game.html:8
+msgid "game"
+msgstr "žaidimas"
+
+#: rpsgame/templates/rpsgame/play_game.html:13
 msgid "choose your move"
 msgstr "pasirink ėjimą"
 
-#: rpsgame/templates/base.html:20 rpsgame/templates/rpsgame/play_game.html:18
+#: rpsgame/templates/rpsgame/play_game.html:19
 msgid "play"
 msgstr "žaisk"
 
-#: rpsgame/templates/base.html:25 rpsgame/templates/rpsgame/play_game.html:23
+#: rpsgame/templates/rpsgame/play_game.html:24
 msgid "your move:"
 msgstr "tavo ėjimas:"
 
-#: rpsgame/templates/base.html:26 rpsgame/templates/rpsgame/play_game.html:24
+#: rpsgame/templates/rpsgame/play_game.html:25
 msgid "computer's move:"
 msgstr "kompiuterio ėjimas:"
 
-#: rpsgame/templates/base.html:32 rpsgame/templates/rpsgame/play_game.html:30
+#: rpsgame/templates/rpsgame/play_game.html:31
 msgid "community on discord"
-msgstr ""
+msgstr "discord bendruomenė"
 
 #: rpsgame/views.py:13
 msgid "it's a tie!"

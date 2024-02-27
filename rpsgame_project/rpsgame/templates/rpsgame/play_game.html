@@ -5,25 +5,30 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"> {#linkas, kad veiktu style.css failas#}
 </head>
 <body>
-    <h1>{% trans "game"|capfirst %}</h1>
-    <h2>{% trans "rock"|capfirst %}-{% trans "paper"|capfirst %}-{% trans "scissors"|capfirst %}</h2>
-    
-    <form method="post">
-        {% csrf_token %}
-        <label for="move">{% trans "choose your move"|capfirst %}:</label>
-        <select name="move" id="move">
-            <option value="{% trans "rock" %}">{% trans "rock"|capfirst %}</option>
-            <option value="{% trans "paper" %}">{% trans "paper"|capfirst %}</option>
-            <option value="{% trans "scissors" %}">{% trans "scissors"|capfirst %}</option>
-        </select>
-        <button type="submit">{% trans "play"|capfirst %}</button>
-    </form>
+    <header>
+        <span class="logo">{% trans "game"|capfirst %}</span>
+        <ul class="symbol">
+            <li style="float:none;">{% trans "rock"|capfirst %}</li>
+            <li style="float:center;">{% trans "paper"|capfirst %}</li>
+            <li style="float:right;">{% trans "scissors"|capfirst %}</li>
+        </ul>
+        <form method="post">
+            {% csrf_token %}
+            <label for="move">{% trans "choose your move"|capfirst %}:</label>
+            <select name="move" id="move">
+                <option value="{% trans "rock" %}">{% trans "rock"|capfirst %}</option>
+                <option value="{% trans "paper" %}">{% trans "paper"|capfirst %}</option>
+                <option value="{% trans "scissors" %}">{% trans "scissors"|capfirst %}</option>
+            </select>
+            <button type="submit">{% trans "play"|capfirst %}</button>
+        </form>
 
-    {% if result %}
-        <h3>{{ result }}</h3>
-        <p>{% trans "your move:"|capfirst %} {{ user_move }}</p>
-        <p>{% trans "computer's move:"|capfirst %} {{ computer_move }}</p>
-    {% endif %}
+        {% if result %}
+            <h5>{{ result }}</h5>
+            <p>{% trans "your move:"|capfirst %} {{ user_move }}</p>
+            <p>{% trans "computer's move:"|capfirst %} {{ computer_move }}</p>
+        {% endif %}
+    </header>
     <main>{% block content %}{% endblock content %}</main>
     <footer>
         {% block footer  %}{% endblock footer  %}
