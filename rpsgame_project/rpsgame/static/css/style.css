@@ -1,6 +1,6 @@
 body {
     background-color: #cccccc; /* pakeis background spalva, kuria galima rinktis palietus spalvu palete pries koda: #cccccc */
-    background-image: url('/static/img/rules.png'); /* viso puslapio background paveiksliukas */
+    /*background-image: url('/static/img/rules.png'); /* viso puslapio background paveiksliukas */
     background-size: cover; /* contain: sutalpins tik vertikaliai, o horizontaliai padaugins paveikslelius, cover: isples visa pav. per puslapi */
     background-repeat: none; /* galime isjungti paveiksleliu horizontalu pasikartojima */
     font-family: sans-serif; /* srifto keitimas */
