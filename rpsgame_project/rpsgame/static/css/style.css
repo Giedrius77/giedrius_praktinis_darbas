@@ -1,8 +1,8 @@
 body {
-    background-color: none; /* pakeis background spalva, kuria galima rinktis palietus spalvu palete pries koda: #cccccc */
-    /*background-image: url('/static/img/jerome.jpg'); /* viso puslapio background paveiksliukas */
-    /*background-size: cover; /* contain: sutalpins .jpg tik vertikaliai, o horizontaliai padaugins paveikslelius, cover: isples visa pav. per puslapi */
-    /*background-repeat: none; /* galime isjungti paveiksleliu horizontalu pasikartojima */
+    background-color: #cccccc; /* pakeis background spalva, kuria galima rinktis palietus spalvu palete pries koda: #cccccc */
+    background-image: url('/static/img/rules.png'); /* viso puslapio background paveiksliukas */
+    background-size: cover; /* contain: sutalpins tik vertikaliai, o horizontaliai padaugins paveikslelius, cover: isples visa pav. per puslapi */
+    background-repeat: none; /* galime isjungti paveiksleliu horizontalu pasikartojima */
     font-family: sans-serif; /* srifto keitimas */
     font-size: 30px; /* srifto dydis - siuo metu 20 pikseliu */
     display: flex; /* visas puslapis bus FLEX boxu sistema, ne grid (antras galimas isdestymo variantas) */
@@ -29,10 +29,12 @@ header .logo {
 header ul.symbol {
     margin: 0; /* netures margin tarpu (galima keisti taip judindami boxus) */
     padding: 0; /* netures padding tarpu (galima keisti taip judindami boxus) */
+    /*display: flex; /* pati header padaro i FLEX boxu sistema */
+    flex-direction: row; /* header FLEX boxai bus is desines i kaire */
 }
 
 header ul.symbol li { 
-    background-color: #5c7acb3f; /* header/virsaus spalva, paskutinis 9f - permatomumas */
+    /*background-color: #5c7acb3f; /* header/virsaus spalva, paskutinis 9f - permatomumas */
     font-size: 30px; /* srifto dydis - siuo metu 20 pikseliu */
     /*display: flex; /* pati header padaro i FLEX boxu sistema */
     /*flex-direction: row; /* header FLEX boxai bus is desines i kaire */
@@ -44,11 +46,12 @@ header ul.symbol li {
 
 main {
     flex-grow: 1; /* jeigu 1 tai puslapis plesis kiek turi vietos per visa FLEX boxa */
-    background-color: #3ca8453f; /* cccccc9f */
+    background-color: #cccccc3f; /*  */
 }
 
 footer {
     background-color: #6666669f; /* footerio/apacios spalva, 9f - permatomumas */
+    align-items: center;
 }
 
 button { /* apstilizuosime visus "button" */
