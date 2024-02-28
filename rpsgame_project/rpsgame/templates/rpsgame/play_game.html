@@ -26,7 +26,7 @@
         
     <main>
         <span class="move"></span>
-        <form method="post" id="gameForm">
+        <form method="post">
             {% csrf_token %}
             <label for="move">{% trans "choose your move"|capfirst %}:</label>
             <select name="move" id="move">
@@ -44,9 +44,11 @@
         {% endif %}
 
         <div class="scoreboard">
-            <p>Wins: <span id="win-count">0</span></p>
-            <p>Losses: <span id="loss-count">0</span></p>
+            <p>{% trans "wins"|capfirst %}: <span id="win-count">{{ win_count }}</span></p>
+            <p>{% trans "losses"|capfirst %}: <span id="loss-count">{{ loss_count }}</span></p>
         </div>
+        
+        <button class="refresh-button" onclick="location.reload();">{% trans "refresh"|capfirst %}</button>
     </main>
 
     <footer>

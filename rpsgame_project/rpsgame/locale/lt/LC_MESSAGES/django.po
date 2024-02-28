@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 10:48+0200\n"
+"POT-Creation-Date: 2024-02-28 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,22 +26,22 @@ msgstr "RPS žaidimas"
 
 #: rpsgame/templates/rpsgame/play_game.html:6
 #: rpsgame/templates/rpsgame/play_game.html:12
-#: rpsgame/templates/rpsgame/play_game.html:33 rpsgame/views.py:8
-#: rpsgame/views.py:14
+#: rpsgame/templates/rpsgame/play_game.html:33 rpsgame/views.py:9
+#: rpsgame/views.py:19
 msgid "rock"
 msgstr "akmuo"
 
 #: rpsgame/templates/rpsgame/play_game.html:6
 #: rpsgame/templates/rpsgame/play_game.html:12
-#: rpsgame/templates/rpsgame/play_game.html:34 rpsgame/views.py:8
-#: rpsgame/views.py:14
+#: rpsgame/templates/rpsgame/play_game.html:34 rpsgame/views.py:9
+#: rpsgame/views.py:19
 msgid "paper"
 msgstr "popierius"
 
 #: rpsgame/templates/rpsgame/play_game.html:6
 #: rpsgame/templates/rpsgame/play_game.html:12
-#: rpsgame/templates/rpsgame/play_game.html:35 rpsgame/views.py:8
-#: rpsgame/views.py:14
+#: rpsgame/templates/rpsgame/play_game.html:35 rpsgame/views.py:9
+#: rpsgame/views.py:19
 msgid "scissors"
 msgstr "žirklės"
 
@@ -66,19 +66,31 @@ msgstr "tavo ėjimas:"
 msgid "computer's move:"
 msgstr "kompiuterio ėjimas:"
 
-#: rpsgame/templates/rpsgame/play_game.html:49
+#: rpsgame/templates/rpsgame/play_game.html:47
+msgid "wins"
+msgstr "laimėjimai"
+
+#: rpsgame/templates/rpsgame/play_game.html:48
+msgid "losses"
+msgstr "pralaimėjimai"
+
+#: rpsgame/templates/rpsgame/play_game.html:51
+msgid "refresh"
+msgstr "atnaujinti"
+
+#: rpsgame/templates/rpsgame/play_game.html:56
 msgid "giedriaus practical work"
 msgstr "giedriaus praktinis darbas"
 
-#: rpsgame/views.py:13
+#: rpsgame/views.py:18
 msgid "it's a tie!"
 msgstr "lygiosios"
 
-#: rpsgame/views.py:15
+#: rpsgame/views.py:20
 msgid "you win!"
 msgstr "tu laimėjai!"
 
-#: rpsgame/views.py:17
+#: rpsgame/views.py:23
 msgid "computer wins!"
 msgstr "kompiuteris laimėjo!"
 

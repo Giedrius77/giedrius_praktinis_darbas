@@ -54,6 +54,7 @@ form {
 }
 
 main {
+    margin-top: 40px;
     padding: 40px;
     text-align: center;
     flex: 1;
@@ -62,7 +63,7 @@ main {
 
 label {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 36px;
 }
 
 select, button {
@@ -70,7 +71,7 @@ select, button {
     margin: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-    font-size: 36px;
+    font-size: 54px;
     cursor: pointer;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -80,16 +81,24 @@ button {
     background-color: #94d2bd;
     color: #000;
     transition: background-color 0.3s ease;
-    font-size: 46px;
+    font-size: 72px;
 }
 
 button:hover {
     background-color: #84c7ae;
 }
 
+.refresh-button {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+
 .scoreboard {
     margin-top: 20px;
     text-align: center;
+    font-size: 14px;
+    font-style: italic;
 }
 
 .scoreboard p {
