@@ -1,75 +1,125 @@
-body {
-    background-color: #cccccc; /* pakeis background spalva, kuria galima rinktis palietus spalvu palete pries koda: #cccccc */
-    /*background-image: url('/static/img/rules.png'); /* viso puslapio background paveiksliukas */
-    background-size: cover; /* contain: sutalpins tik vertikaliai, o horizontaliai padaugins paveikslelius, cover: isples visa pav. per puslapi */
-    background-repeat: none; /* galime isjungti paveiksleliu horizontalu pasikartojima */
-    font-family: sans-serif; /* srifto keitimas */
-    font-size: 30px; /* srifto dydis - siuo metu 20 pikseliu */
-    display: flex; /* visas puslapis bus FLEX boxu sistema, ne grid (antras galimas isdestymo variantas) */
-    flex-direction: column; /* isdestymas boxu bus vertikalus */
-    margin: 0; /* netures margin tarpu (galima keisti taip judindami boxus) */
-    padding: 0; /* netures padding tarpu (galima keisti taip judindami boxus) */
-    min-height: 100vh; /* uzims 100% device height/vertical height */
-
+html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-header .logo { 
-    background-color: #9999993f; /* header/virsaus spalva, paskutinis 9f - permatomumas */
-    font-size: 75px; /* srifto dydis - siuo metu 20 pikseliu */
-    font-weight: 700; /* pastorins srifta */
-    text-decoration: none; /* linko underline bus nuimtas */
-    display: flex; /* pati header padaro i FLEX boxu sistema */
-    flex-direction: row; /* header FLEX boxai bus is desines i kaire */
-    align-items: center; /* sucentruos visus boxus headeryje is virsaus i apacia */
-    justify-content: center; /* sucentruos visus boxus headeryje i centra (reikia nurodyti - centre) */
-    margin: 0; /* netures margin tarpu (galima keisti taip judindami boxus) */
-    padding: 0; /* netures padding tarpu (galima keisti taip judindami boxus) */
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 { 
-    background-color: #5c7acb3f; /* header/virsaus spalva, paskutinis 9f - permatomumas */
-    font-size: 20px; /* srifto dydis - siuo metu 20 pikseliu */
-    display: flex; /* pati header padaro i FLEX boxu sistema */
-    /*flex-direction: row; /* header FLEX boxai bus is desines i kaire */
-    /*align-items: center; /* sucentruos visus boxus headeryje is virsaus i apacia */
-    justify-content: center; /* sucentruos visus boxus headeryje i centra (reikia nurodyti - centre) */
-    margin: 0; /* netures margin tarpu (galima keisti taip judindami boxus) */
-    padding: 0; /* netures padding tarpu (galima keisti taip judindami boxus) */
+.logo {
+    font-weight: bold;
+    font-size: 54px;
+    font-style: italic;
+}
+
+.spacer {
+    flex: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 3rem 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    margin: 0;
+}
+
+.language {
+    padding: 10px;
+    background-color: #0a9396;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language:hover {
+    background-color: #094e53;
 }
 
 main {
-    flex-grow: 1; /* jeigu 1 tai puslapis plesis kiek turi vietos per visa FLEX boxa */
-    background-color: #cccccc3f; /*  */
+    padding: 40px;
+    text-align: center;
+    flex: 1;
+    overflow-y: auto;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+select, button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #94d2bd;
+    color: #000;
+    transition: background-color 0.3s ease;
+    font-size: 46px;
+}
+
+button:hover {
+    background-color: #84c7ae;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.scoreboard p {
+    margin: 5px;
+}
+
+#win-count, #loss-count {
+    font-weight: bold;
+    color: #009688;
 }
 
 footer {
-    background-color: #6666669f; /* footerio/apacios spalva, 9f - permatomumas */
-    align-items: center;
+    background-color: #002529;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-select {
-    background-color: #d8d8d8;
-    border: 1px solid #666666;
-    border-bottom: 3px solid #004488;
-    padding: 0.5rem;
-    margin: 1rem 2rem;
-    font-size: 100%;
-    cursor: pointer;
-    border-radius: 0.5rem; /* mygtuko kampus suapvalins */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
 
-button { /* apstilizuosime visus "button" */
-    background-color: #d8d8d8;
-    border: 1px solid #666666;
-    border-bottom: 3px solid #004488;
-    padding: 0.5rem;
-    margin: 1rem 2rem;
-    font-size: 90%;
-    cursor: pointer;
-    border-radius: 0.5rem; /* mygtuko kampus suapvalins */
+footer a {
+    color: #80ed99;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-button:hover { /* keisti elemento statusa, t.y. PALIETUS teksta jis pasikeis */
-    background-color: #b8b8b8;
-    border-bottom: 3px solid #e81e1e;
-} 
+footer p {
+    margin: 0;
+}
