@@ -24,7 +24,8 @@
         </form>
     </header>    
         
-    <main>
+    <main> 
+        <div class="main-background"></div>
         <span class="move"></span>
         <form method="post">
             {% csrf_token %}
@@ -55,7 +56,10 @@
         {% block footer  %}{% endblock footer  %}
         <p>&copy; 2024 {% trans "giedriaus practical work"|capfirst %}
             <a style="float:right;" href="https://discord.com/channels/1095223923081228290/1185527585560592475" targe="_blank"><img class="icon" src="{% static "img/icons8_discord.png" %}"></a>
-            <a style="float:right;" href="https://facebook.com/" target="_blank"><img class="icon" src="{% static "img/icons8_facebook.png" %}"></a>
+            <a style="float:right;" href="https://facebook.com" target="_blank"><img class="icon" src="{% static "img/icons8_facebook.png" %}"></a>
+            <a style="float:right;" href="https://www.instagram.com" target="_blank"><img class="icon" src="{% static "img/icons8_instagram.png" %}"></a>
+            <a style="float:left;" href="https://www.15min.lt" target="_blank"><img class="icon" src="{% static "img/15min.png" %}"></a>
+            <a style="float:left;" href="https://www.delfi.lt" target="_blank"><img class="icon" src="{% static "img/delfi.png" %}"></a>
         </p>
     </footer>
 
